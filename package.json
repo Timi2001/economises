@@ -1,0 +1,26 @@
+{
+  "name": "economises-blog",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A modern, feature-rich, and beautiful personal blog platform.",
+  "scripts": {
+    "dev": "pnpm --parallel dev",
+    "build": "pnpm --filter ./frontend build && pnpm --filter ./backend build",
+    "start": "pnpm --filter ./frontend start",
+    "lint": "pnpm --parallel lint",
+    "format": "prettier --write .",
+    "test": "pnpm --parallel test"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.3",
+    "eslint": "^8.50.0",
+    "typescript": "^5.2.2",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
+    "@types/node": "^20.8.2",
+    "pnpm": "^8.8.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
