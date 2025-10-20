@@ -14,8 +14,7 @@
 
 ### Required Accounts (All Free)
 - ✅ **GitHub Account** - For code repository and deployment
-- ✅ **Vercel Account** - For hosting the frontend
-- ✅ **Neon Account** - For PostgreSQL database
+- ✅ **Railway Account** - For full-stack hosting + PostgreSQL database
 - ✅ **Resend Account** - For email notifications (optional)
 
 ### Optional (But Recommended)
@@ -37,21 +36,18 @@
   - Create new public repository: `economises-blog`
   - Push current code: `git init && git add . && git commit -m "Initial commit" && git push`
 
-- [ ] **Set up Neon PostgreSQL Database**
-  - Sign up at neon.tech
-  - Create new project: `economises-blog-db`
-  - Get connection string from dashboard
-  - Update backend/.env with real DATABASE_URL
-
-- [ ] **Set up Vercel Hosting**
-- Sign up at vercel.com
-- Connect your GitHub repository
-  - Configure for monorepo (frontend + backend)
+- [ ] **Set up Railway Full-Stack Hosting**
+  - Sign up at railway.app
+  - Connect your GitHub repository
+  - Railway will auto-detect Next.js frontend + Express backend
+  - Railway will provision PostgreSQL database automatically
+  - Get your live URL (like: `economises.up.railway.app`)
 
 ### Success Criteria
 - ✅ GitHub repo created and code pushed
-- ✅ Neon database created with connection string
-- ✅ Vercel connected to GitHub repo
+- ✅ Railway connected and deployed
+- ✅ Live URL accessible
+- ✅ Database automatically provisioned
 
 ---
 
@@ -191,8 +187,7 @@
 | Service | Purpose | Free Tier Limits | Cost if Exceeded |
 |---------|---------|------------------|------------------|
 | **GitHub** | Code repository | Unlimited public repos | $4/month for private |
-| **Vercel** | Hosting & deployment | 100GB bandwidth/month | $20+/month |
-| **Neon** | PostgreSQL database | 512MB storage, 100 hours compute | $0.005/hour compute |
+| **Railway** | Full-stack hosting + PostgreSQL | 512MB RAM, 1GB disk, 100 hours/month | $5+/month |
 | **Resend** | Email service | 3,000 emails/month | $20/1,000 emails |
 
 **Total Cost**: $0/month for basic usage
@@ -208,8 +203,7 @@
 
 ### Accounts You Need to Create:
 - GitHub (github.com)
-- Vercel (vercel.com)
-- Neon (neon.tech)
+- Railway (railway.app)
 - Resend (resend.com) - optional for email
 
 ---
